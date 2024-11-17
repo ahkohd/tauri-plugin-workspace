@@ -18,7 +18,7 @@ toast = { git = "https://github.com/ahkohd/tauri-toolkit", branch = "v2" }
 ```
 
 ### Demo
-![A demo of toast](https://github.com/ahkohd/tauri-toolkit/blob/v2/assets/share-picker.gif)
+![A demo of toast](https://github.com/ahkohd/tauri-toolkit/blob/v2/assets/toast.gif)
 
 ## Usage
 ```rust
