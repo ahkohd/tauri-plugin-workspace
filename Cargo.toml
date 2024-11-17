@@ -16,23 +16,53 @@ core-foundation = "0.9.4"
 core-graphics = "0.23.2"
 objc_id = { version = "0.1.1" }
 objc-foundation = { version = "0.1.1" }
-objc2-foundation = { version = "0.2.0", features = ["NSGeometry"] }
-objc2-app-kit = { version = "0.2.0", features = ["NSBezierPath"] }
+objc2 = "0.5.2"
+objc2-foundation = { version = "0.2.2", features = [
+  "NSGeometry",
+  "NSString",
+  "NSTimer",
+  "NSThread",
+] }
+objc2-app-kit = { version = "0.2.2", features = [
+  "block2",
+  "objc2-quartz-core",
+  "NSBezierPath",
+  "NSSharingService",
+  "NSResponder",
+  "NSWindow",
+  "NSPanel",
+  "NSView",
+  "NSText",
+  "NSTextField",
+  "NSControl",
+  "NSParagraphStyle",
+  "NSVisualEffectView",
+  "NSGraphics",
+  "NSAnimation",
+  "NSAnimationContext",
+  "NSColor",
+] }
+
 block = "0.1.6"
+block2 = "0.5.1"
 
 windows-sys = { version = "0.52.0", features = [
-    "Win32_UI",
-    "Win32_UI_Shell",
-    "Win32_UI_WindowsAndMessaging",
-    "Win32_Graphics",
-    "Win32_Foundation",
-    "Win32_Graphics_Gdi",
-    "Win32_UI_HiDpi",
-    "Win32_System",
-    "Win32_System_Com",
-    "Win32_System_Com_StructuredStorage"
+  "Win32_UI",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_Graphics",
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_UI_HiDpi",
+  "Win32_System",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
 ] }
+
 image = "0.25.1"
+markdown = "0.3.0"
+
+monitor = { path = "libs/monitor" }
 
 [workspace.package]
 edition = "2021"
