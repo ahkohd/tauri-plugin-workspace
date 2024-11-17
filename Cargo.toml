@@ -20,13 +20,26 @@ objc2-foundation = { version = "0.2.0", features = [
   "NSGeometry",
   "NSURL",
   "NSString",
+  "NSTimer",
 ] }
 objc2-app-kit = { version = "0.2.0", features = [
+  "objc2-quartz-core",
   "NSBezierPath",
   "NSSharingService",
+  "NSResponder",
+  "NSView",
+  "NSText",
+  "NSTextField",
+  "NSControl",
+  "NSParagraphStyle",
+  "NSVisualEffectView",
+  "NSGraphics",
+  "NSPanel",
+  "NSAnimationContext",
 ] }
-color = { path = "libs/color" }
+
 block = "0.1.6"
+block2 = "0.5.1"
 
 windows-sys = { version = "0.59.0", features = [
   "Win32_UI",
@@ -40,7 +53,12 @@ windows-sys = { version = "0.59.0", features = [
   "Win32_System_Com",
   "Win32_System_Com_StructuredStorage",
 ] }
+
 image = "0.25.1"
+markdown = "0.3.0"
+
+color = { path = "libs/color" }
+monitor = { path = "libs/monitor" }
 
 [workspace.package]
 edition = "2021"

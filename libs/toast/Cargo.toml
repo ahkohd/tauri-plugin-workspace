@@ -1,0 +1,22 @@
+[package]
+name = "toast"
+version = "0.1.0"
+description = "A library to show toast"
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target."cfg(target_os = \"macos\")".dependencies]
+tauri.workspace = true
+objc2.workspace = true
+objc2-app-kit.workspace = true
+objc2-foundation.workspace = true
+block2.workspace = true
+monitor.workspace = true
+markdown.workspace = true
+
+cocoa.workspace = true
+objc.workspace = true

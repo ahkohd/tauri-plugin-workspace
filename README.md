@@ -9,6 +9,7 @@
 | [border](libs/border)     | Add border to `WebviewWindow`.                    | ?  | ✅ | ?  | ?   | ?   |
 | [system-notification](libs/system-notification)     | Listen to System or Workspace notification.                    | ?  | ✅ | ?  | ?   | ?   |
 | [share-picker](libs/share-picker)     | Show a Share picker                    | ?  | ✅ | ?  | ?   | ?   |
+| [toast](libs/toast)     | Show a toast                    | ?  | ✅ | ?  | ?   | ?   |
 
 
 _This repo and all plugins require a Rust version of at least __1.64___

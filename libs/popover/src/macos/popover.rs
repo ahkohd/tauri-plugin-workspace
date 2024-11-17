@@ -402,6 +402,7 @@ impl PopoverView {
         }
     }
 
+    #[allow(clippy::not_unsafe_ptr_arg_deref)]
     pub fn set_parent(&self, parent_view: id) {
         let () = unsafe {
             msg_send![parent_view, addSubview: self positioned: NSWindowOrderingMode::NSWindowBelow relativeTo: 0]
