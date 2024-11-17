@@ -38,7 +38,7 @@ fn main() {
 
 - `app_handle.toast(message: &str)`:
   Shows a toast
-  - `message: String`: The toast message. It supports markdown.
+  - `message: &str`: The toast message. It supports markdown.
 
 ## ToastConfig
 Configure the toast
