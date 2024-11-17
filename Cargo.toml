@@ -7,26 +7,29 @@ serde = { version = "1.0.200", features = ["derive"] }
 tauri = "2.0.0-beta.22"
 tauri-build = "2.0.0-beta.17"
 serde_json = "1"
-thiserror = "1"
+thiserror = "2.0.3"
 
-cocoa = "0.25.0"
+cocoa = "0.26.0"
 objc = "0.2.7"
-core-foundation = "0.9.4"
-core-graphics = "0.23.2"
+core-foundation = "0.10.0"
+core-graphics = "0.24.0"
 objc_id = { version = "0.1.1" }
 objc-foundation = { version = "0.1.1" }
 objc2 = "0.5.2"
 objc2-foundation = { version = "0.2.0", features = [
   "NSGeometry",
-  "NSURL",
   "NSString",
   "NSTimer",
+  "NSThread",
 ] }
 objc2-app-kit = { version = "0.2.0", features = [
+  "block2",
   "objc2-quartz-core",
   "NSBezierPath",
   "NSSharingService",
   "NSResponder",
+  "NSWindow",
+  "NSPanel",
   "NSView",
   "NSText",
   "NSTextField",
@@ -34,8 +37,9 @@ objc2-app-kit = { version = "0.2.0", features = [
   "NSParagraphStyle",
   "NSVisualEffectView",
   "NSGraphics",
-  "NSPanel",
+  "NSAnimation",
   "NSAnimationContext",
+  "NSColor",
 ] }
 
 block = "0.1.6"
