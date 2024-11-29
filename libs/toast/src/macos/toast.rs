@@ -219,7 +219,7 @@ impl Default for ToastConfig {
             font_size: 16.0,
             padding: (15.0, 10.0),
             position: ToastPosition::Bottom,
-            offset: 50.0,
+            offset: 150.0,
             duration: 3.0,
             fade_duration: 0.3,
         }
