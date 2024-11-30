@@ -39,7 +39,9 @@ impl<R: Runtime> WebviewWindowExt for WebviewWindow<R> {
 
         let content_view: id = unsafe { msg_send![handle, contentView] };
 
-        let view = BorderView::new(config, self.label().to_string());
+        let view = self
+            .border()
+            .unwrap_or(BorderView::new(config, self.label().to_string()));
 
         let frame = NSRect::new(
             NSPoint::new(0.0, 0.0),
