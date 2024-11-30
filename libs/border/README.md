@@ -30,6 +30,7 @@ border = { git = "https://github.com/ahkohd/tauri-toolkit", branch = "v2" }
 
 ![Border view demo](../../assets/border-demo-03.png)
 
+> See an example project of a window with a border [here](https://github.com/ahkohd/tauri-macos-window-border-example)
 
 ## Usage
 A basic usage:
