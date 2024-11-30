@@ -259,12 +259,6 @@ impl BorderView {
     pub fn remove(&self) {
         let () = unsafe { msg_send![self, removeFromSuperview] };
     }
-
-    pub fn destroy(&self) {
-        self.remove();
-
-        let () = unsafe { msg_send![self, release] };
-    }
 }
 
 unsafe impl Message for BorderView {}
