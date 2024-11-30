@@ -96,6 +96,8 @@ The `WebviewWindowExt` trait from the `border` crate when in scope adds the foll
   Adds a border view around the `WebviewWindow`. If options is `None`, the default options are used.
 - `border(&self) -> Option<SharedId<BorderView>>`:
   Get the border view added around the `WebviewWindow`.
+- `remove(&self)`:
+  Remove the border view from the `WebviewWindow`.
 
 ## BorderView
 The view that adds border around the `WebviewWindow`.
