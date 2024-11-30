@@ -218,16 +218,22 @@ impl BorderView {
     #[allow(dead_code)]
     pub fn set_line_width(&self, width: CGFloat) {
         let () = unsafe { msg_send![self, setLineWidth: width] };
+
+        let () = unsafe { msg_send![self, display] };
     }
 
     #[allow(dead_code)]
     pub fn set_line_color(&self, color: Color) {
         let () = unsafe { msg_send![self, setLineColor: color.to_nscolor()] };
+
+        let () = unsafe { msg_send![self, display] };
     }
 
     #[allow(dead_code)]
     pub fn set_inset(&self, inset: CGFloat) {
         let () = unsafe { msg_send![self, setInset: inset] };
+
+        let () = unsafe { msg_send![self, display] };
     }
 
     #[allow(dead_code)]
@@ -237,6 +243,8 @@ impl BorderView {
         let layer: id = unsafe { msg_send![self, layer] };
 
         let () = unsafe { msg_send![layer, setCornerRadius: radius] };
+
+        let () = unsafe { msg_send![self, display] };
     }
 
     #[allow(dead_code)]
