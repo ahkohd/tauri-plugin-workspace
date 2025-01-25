@@ -15,7 +15,7 @@ core-foundation = "0.10.0"
 core-graphics = "0.24.0"
 objc_id = { version = "0.1.1" }
 objc-foundation = { version = "0.1.1" }
-objc2 = "0.5.2"
+objc2 = "0.6.0"
 objc2-foundation = { version = "0.2.0", features = [
   "NSGeometry",
   "NSString",
