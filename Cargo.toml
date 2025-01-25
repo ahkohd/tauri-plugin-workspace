@@ -22,7 +22,7 @@ objc2-foundation = { version = "0.2.0", features = [
   "NSTimer",
   "NSThread",
 ] }
-objc2-app-kit = { version = "0.2.0", features = [
+objc2-app-kit = { version = "0.3.0", features = [
   "block2",
   "objc2-quartz-core",
   "NSBezierPath",
