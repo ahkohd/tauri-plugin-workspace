@@ -43,7 +43,7 @@ objc2-app-kit = { version = "0.2.0", features = [
 ] }
 
 block = "0.1.6"
-block2 = "0.5.1"
+block2 = "0.6.0"
 
 windows-sys = { version = "0.59.0", features = [
   "Win32_UI",
