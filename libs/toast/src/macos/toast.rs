@@ -130,7 +130,7 @@ impl NSToastPanel {
 
         panel.setLevel(NSFloatingWindowLevel);
 
-        panel.setHasShadow(false);
+        panel.setHasShadow(true);
 
         unsafe {
             panel.setBackgroundColor(Some(&NSColor::clearColor()));
